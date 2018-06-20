@@ -1,0 +1,11 @@
+module libMemcachedLinux [system] {
+    header "/usr/include/libmemcached/memcached.h"
+    link "libmemcached"
+    export *
+}
+
+module libMemcachedMac [system] {
+    header "/usr/local/include/libmemcached/memcached.h"
+    link "libmemcached"
+    export *
+}
